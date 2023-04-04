@@ -53,7 +53,7 @@ web3.setProvider(web3.currentProvider);
 contract = new web3.eth.Contract(ABI);
 const deploy = async () => {
 	//const accounts = await web3.eth.getAccounts();
-	let wallet = web3.eth.accounts.wallet.add(web3.eth.accounts.privateKeyToAccount('0xc6ec3cd7f55c2cb9ce0f8bc692b823ead343c89b15b0e161ac4b794bd69ee9d7'));
+	let wallet = web3.eth.accounts.wallet.add(web3.eth.accounts.privateKeyToAccount(''));
     console.log(wallet);
 	console.log("abi:",ABI);
 	console.log('Attempting to deploy from account', wallet["address"]);
